@@ -1,4 +1,3 @@
-# Authorship-Attribution-for-Russian
 # Authorship Attribution for Russian
 
 ## Project Overview
@@ -62,4 +61,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-For questions or collaboration, please contact [Artur Bondarenco](mailto:artur.bondarenco@example.com).
+For questions or collaboration, please contact [Artur Bondarenco](mailto:artur.bondarenco@gmail.com).
