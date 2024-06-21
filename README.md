@@ -49,6 +49,26 @@ The models were evaluated using accuracy, precision, recall, and F1-score. The b
 8. **Model 4 (Latin characters)**: 0.13
 9. **Dummy model**: 0.10
 
+### Repository Structure
+├── data/
+│   ├── training_set.csv
+│   ├── test_set.csv
+├── notebooks/
+│   ├── Data_analysis.ipynb
+│   ├── Model_training.ipynb
+├── src/
+│   ├── preprocess.py
+│   ├── train.py
+│   ├── evaluate.py
+├── results/
+│   ├── model_performance.csv
+├── data/
+│   ├── preprocess.py
+├── README.md
+└── presentation/
+    ├── Authorship-attribution-for-Russian.pdf
+
+
 ## Conclusion
 
 This project successfully demonstrates the application of logistic regression for authorship attribution in Russian literature. The combination of multiple linguistic features leads to improved model performance, with the combined feature model achieving the highest scores.
