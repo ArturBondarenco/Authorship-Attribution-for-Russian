@@ -49,25 +49,24 @@ The models were evaluated using accuracy, precision, recall, and F1-score. The b
 8. **Model 4 (Latin characters)**: 0.13
 9. **Dummy model**: 0.10
 
-### Repository Structure
 ├── data/
-│   ├── training_set.csv
-│   ├── test_set.csv
+│ ├── raw/
+│ │ ├── [raw .txt files]
+│ ├── training_set.csv
+│ ├── test_set.csv
 ├── notebooks/
-│   ├── Data_analysis.ipynb
-│   ├── Model_training.ipynb
+│ ├── Data_analysis.ipynb
+│ ├── Model_training.ipynb
 ├── src/
-│   ├── preprocess.py
-│   ├── train.py
-│   ├── evaluate.py
+│ ├── preprocess.py
+│ ├── train.py
+│ ├── evaluate.py
 ├── results/
-│   ├── model_performance.csv
-├── data/
-│   ├── preprocess.py
+│ ├── model_performance.csv
+├── presentation/
+│ ├── Authorship-attribution-for-Russian.pdf
 ├── README.md
-└── presentation/
-    ├── Authorship-attribution-for-Russian.pdf
-
+└── LICENSE
 
 ## Conclusion
 
