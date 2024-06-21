@@ -49,19 +49,6 @@ The models were evaluated using accuracy, precision, recall, and F1-score. The b
 8. **Model 4 (Latin characters)**: 0.13
 9. **Dummy model**: 0.10
 
-.
-├── README.md                       # README file
-├── __mocks__                       # Mocks for testing
-├── .husky                          # Husky configuration
-├── .vscode                         # VSCode configuration
-├── public                          # Public assets folder
-├── src
-│   ├── components                  # Custom reusable components
-│   ├── pages                       # Website Pages
-│   ├── styles                      # Styles folder
-│   └── utils                       # Utility functions
-└── tsconfig.json                   # TypeScript configuration
-
 ## Conclusion
 
 This project successfully demonstrates the application of logistic regression for authorship attribution in Russian literature. The combination of multiple linguistic features leads to improved model performance, with the combined feature model achieving the highest scores.
