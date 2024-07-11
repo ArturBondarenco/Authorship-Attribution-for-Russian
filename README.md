@@ -25,7 +25,7 @@ Seven different models were trained using different combinations of the extracte
 
 1. **Model 1**: Named Entities
 2. **Model 2.1**: Unique 5-gram POS Sequences (49,912 features)
-3. **Model 2.2**: Common 5-gram POS Sequences (14 features)
+3. **Model 2.2**: Common 5-gram POS Sequences (12 features)
 4. **Model 3.1**: Whitespace characters (2 features)
 5. **Model 3.2**: Digits (10 features)
 6. **Model 3.3**: Russian characters (64 features)
