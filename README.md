@@ -17,37 +17,45 @@ The following features were extracted from the text for model training:
 
 1. **Named Entities (NER)**: Using SpaCy's Russian model which identifies PER, LOC, and ORG entities.
 2. **5-gram POS Sequences**: Unique and common 5-gram parts of speech sequences.
-3. **Punctuation**: Counting various punctuation marks in the text.
-4. **Latin Characters**: Detection of Latin characters and special characters from French, German, and Ukrainian languages.
+3. **Characters**: Creating features based on various character combinations: whitespaces, digits, Russian characters, non-Russian characters, word characters, punctuation, non-whitespace characters.
 
 ## Models
 
 Seven different models were trained using different combinations of the extracted features:
 
 1. **Model 1**: Named Entities
-2. **Model 2 V1.0**: Unique 5-gram POS Sequences (49,912 features)
-3. **Model 2 V2.0**: Common 5-gram POS Sequences (14 features)
-4. **Model 3**: Punctuation (39 features)
-5. **Model 4**: Latin Characters (62 features)
-6. **Model 5**: Punctuation + Latin Characters (101 features)
-7. **Model 6**: NER + Common 5-gram POS Sequences (17 features)
-8. **Model 7**: All Features Combined (118 features)
+2. **Model 2.1**: Unique 5-gram POS Sequences (49,912 features)
+3. **Model 2.2**: Common 5-gram POS Sequences (14 features)
+4. **Model 3.1**: Whitespace characters (2 features)
+5. **Model 3.2**: Digits (10 features)
+6. **Model 3.3**: Russian characters (64 features)
+7. **Model 3.4**: Non-Russian characters (53 features)
+8. **Model 3.5**: Word characters (127 features)
+9. **Model 3.6**: Punctuation (31 features)
+10. **Model 3.7**: Non-whitespace characters (158 features)
+12. **Model 4**: NER + Common 5-gram POS Sequences (17 features)
+13. **Model 5**: All Features Combined (118 features)
 
 ## Evaluation
 
 The models were evaluated using accuracy, precision, recall, and F1-score. The best-performing model was Model 7, which combined all features.
 
 ### Results (ranked by F1-score (weighted average))
+1. **Model 3.7 (Non-whitespace characters):** 0.47
+2. **Model 5 (all features):** 0.46
+3. **Model 3.6 (Punctuation):** 0.41
+4. **Model 3.5 (Word characters):** 0.37
+5. **Model 3.3 (Russian characters):** 0.35
+6. **Model 2.1 (all unique 5-gram POS sequences) (49912 features):** 0.34
+7. **Model 4 (NER + Common 5-gram POS sequences):** 0.21
+8. **Model 1 (NER)**: 0.17
+9. **Model 2.2 (Common 5-gram POS sequences) (12 features)**: 0.15
+10. **Model 3.4 (Non-Russian characters)**: 0.14
+11. **Model 3.2 (Digits)**: 0.14
+12. **Model 3.1 (Whitespaces)**: 0.12
+13. **Dummy model**: 0.10
 
-1. **Model 7 (all features)**: 0.40
-2. **Model 5 (Punctuation + Latin characters)**: 0.37
-3. **Model 3 (Punctuation)**: 0.36
-4. **Model 2 V 1.0 (all unique 5-gram POS sequences) (49912 features)**: 0.36
-5. **Model 6 (NER + Common 5-gram POS sequences)**: 0.23
-6. **Model 1 (NER)**: 0.19
-7. **Model 2 V. 2.0 (Common 5-gram POS sequences) (14 features)**: 0.16
-8. **Model 4 (Latin characters)**: 0.13
-9. **Dummy model**: 0.10
+
 
 ## Conclusion
 
