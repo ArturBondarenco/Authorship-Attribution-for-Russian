@@ -69,4 +69,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-For questions or collaboration, please contact [Artur Bondarenco](mailto:artur.bondarenco@gmail.com).
+For questions or collaboration, please contact [Artur Bondarenco](https://www.linkedin.com/in/artur-bondarenco-9b2768184/).
